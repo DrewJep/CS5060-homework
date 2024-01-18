@@ -30,8 +30,8 @@ Kernel configured for up to 8 processors.
 Processor type: arm64e (ARM64E)
 Processors active: 0 1 2 3 4 5 6 7
 Primary memory available: 8.00 gigabytes
-Default processor set: 554 tasks, 2479 threads, 8 processors
-Load average: 7.94, Mach factor: 2.52
+Default processor set: 585 tasks, 2630 threads, 8 processors
+Load average: 12.51, Mach factor: 2.12
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -256,9 +256,9 @@ configure:5669: checking the name lister (/usr/bin/nm -B) interface
 configure:5676: gcc -c -g -O2  conftest.c >&5
 configure:5679: /usr/bin/nm -B "conftest.o"
 configure:5682: output
-000000000000026c S _some_variable
+000000000000027c S _some_variable
 0000000000000000 t ltmp0
-000000000000026c s ltmp1
+000000000000027c s ltmp1
 configure:5689: result: BSD nm
 configure:5693: checking the maximum length of command line arguments
 configure:5823: result: 786432
@@ -1441,7 +1441,7 @@ configure:17322: g++ -o conftest -g -O2  -DdDOUBLE  conftest.c -lm  -lpthread >&
 clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 ld: Undefined symbols:
   _isnanf, referenced from:
-      _main in conftest-8de728.o
+      _main in conftest-10fce2.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17322: $? = 1
 configure: failed program was:
@@ -1543,7 +1543,7 @@ configure:17322: g++ -o conftest -g -O2  -DdDOUBLE  conftest.c -lm  -lpthread >&
 clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 ld: Undefined symbols:
   __isnan, referenced from:
-      _main in conftest-1814c5.o
+      _main in conftest-df38bc.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17322: $? = 1
 configure: failed program was:
@@ -1645,7 +1645,7 @@ configure:17322: g++ -o conftest -g -O2  -DdDOUBLE  conftest.c -lm  -lpthread >&
 clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 ld: Undefined symbols:
   __isnanf, referenced from:
-      _main in conftest-5c90ff.o
+      _main in conftest-5a9506.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17322: $? = 1
 configure: failed program was:
@@ -1747,7 +1747,7 @@ configure:17322: g++ -o conftest -g -O2  -DdDOUBLE  conftest.c -lm  -lpthread >&
 clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 ld: Undefined symbols:
   ___isnan, referenced from:
-      _main in conftest-1097c1.o
+      _main in conftest-96b3f8.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17322: $? = 1
 configure: failed program was:
@@ -1926,7 +1926,7 @@ configure:17781: g++ -o conftest -g -O2  -DdDOUBLE  conftest.c -lm  -lpthread >&
 clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 ld: Undefined symbols:
   __doprnt, referenced from:
-      _main in conftest-5d70f9.o
+      _main in conftest-b7dac4.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17781: $? = 1
 configure: failed program was:
@@ -2080,11 +2080,12 @@ config.status:1273: creating tests/UnitTest++/src/Win32/Makefile
 config.status:1273: creating ode-config
 config.status:1273: creating ode.pc
 config.status:1273: creating ode/src/config.h
+config.status:1454: ode/src/config.h is unchanged
 config.status:1502: executing depfiles commands
 config.status:1502: executing libtool commands
-configure:20896: === configuring in ou (/Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/ou)
+configure:20896: === configuring in ou (/Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/ou)
 configure:20959: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--enable-double-precision' --cache-file=/dev/null --srcdir=.
-configure:20896: === configuring in libccd (/Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/libccd)
+configure:20896: === configuring in libccd (/Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/libccd)
 configure:20959: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--enable-double-precision' --cache-file=/dev/null --srcdir=.
 
 ## ---------------- ##
@@ -2262,7 +2263,7 @@ lt_cv_to_tool_file_cmd=func_convert_file_noop
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run aclocal-1.11'
+ACLOCAL='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run aclocal-1.11'
 ALLOCA=''
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
@@ -2270,9 +2271,9 @@ AMDEP_TRUE=''
 AMTAR='$${TAR-tar}'
 AR='ar'
 AS='as'
-AUTOCONF='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoconf'
-AUTOHEADER='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoheader'
-AUTOMAKE='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run automake-1.11'
+AUTOCONF='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoconf'
+AUTOHEADER='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoheader'
+AUTOMAKE='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run automake-1.11'
 AWK='awk'
 CC='g++'
 CCDEPMODE='depmode=gcc3'
@@ -2337,7 +2338,7 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO='lipo'
 LN_S='ln -s'
 LTLIBOBJS=' ${LIBOBJDIR}obstack$U.lo'
-MAKEINFO='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run makeinfo'
+MAKEINFO='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='./install-sh -c -d'
 NM='/usr/bin/nm -B'
@@ -2418,7 +2419,7 @@ host_vendor='apple'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/install-sh'
+install_sh='${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

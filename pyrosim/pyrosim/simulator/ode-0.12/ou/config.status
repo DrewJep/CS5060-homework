@@ -443,7 +443,7 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/ou'
+ac_pwd='/Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/ou'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='./../install-sh -c -d'
@@ -915,12 +915,12 @@ S["mkdir_p"]="$(top_builddir)/./../install-sh -c -d"
 S["MKDIR_P"]="./../install-sh -c -d"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/install-sh"
-S["MAKEINFO"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /Users/drewj/Documents/Code/cs5060/pyrosim/pyrosim/simulator/ode-0.12/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/install-sh"
+S["MAKEINFO"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /Users/drewj/Documents/Code/cs5060/cs5060-homework/pyrosim/pyrosim/simulator/ode-0.12/missing --run aclocal-1.11"
 S["VERSION"]="0"
 S["PACKAGE"]="ou"
 S["CYGPATH_W"]="echo"
