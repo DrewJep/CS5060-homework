@@ -14,7 +14,7 @@ p.loadSDF("world.sdf")
 
 pyrosim.Prepare_To_Simulate(robotId)
 
-backLegSensorValues = np.zeros(10000)
+backLegSensorValues = np.zeros(1000)
 
 for i in range(1000):
     time.sleep(1/60)
