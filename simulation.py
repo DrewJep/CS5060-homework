@@ -18,6 +18,8 @@ pyrosim.Prepare_To_Simulate(robotId)
 backLegSensorValues = np.zeros(1000)
 frontLegSensorValues = np.zeros(1000)
 
+with open('targetAngles.txt', 'r') as file:
+    targetAngles_list = [float(line.strip()) for line in file]
 
 for i in range(1000):
     time.sleep(1/1000)
@@ -27,12 +29,12 @@ for i in range(1000):
     pyrosim.Set_Motor_For_Joint(bodyIndex = robotId,
                                 jointName = "Torso_BackLeg",
                                 controlMode = p.POSITION_CONTROL,
-                                targetPosition = rand.random()*(np.pi)-(np.pi/2),
+                                targetPosition = targetAngles_list[i],
                                 maxForce = 35)
     pyrosim.Set_Motor_For_Joint(bodyIndex = robotId,
                                 jointName = "Torso_FrontLeg",
                                 controlMode = p.POSITION_CONTROL,
-                                targetPosition = rand.random()*(np.pi)-(np.pi/2),
+                                targetPosition = targetAngles_list[i],
                                 maxForce = 35)
 
 p.disconnect()
