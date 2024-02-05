@@ -9,11 +9,11 @@ class MOTOR:
         self.Prepare_To_Act()
 
     def Prepare_To_Act(self):
-        self.amplitude=c.amplitude
-        self.frequency=c.frequency
-        self.offset=c.offset
+        self.amplitude=c.amplitudeF
+        self.frequency=c.frequencyF
+        self.offset=c.phaseOffsetF
         if self.jointName=="Torso_BackLeg":
-            self.frequency=self.frequency*0.5 
+            self.frequency=self.frequency/2.0
         self.values=self.amplitude*np.sin(self.frequency*np.arange(0,2*np.pi,2*np.pi/c.num_iterations)+self.offset)
 
     def Set_Value(self,robotId,t):

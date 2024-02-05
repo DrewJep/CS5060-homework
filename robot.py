@@ -17,7 +17,7 @@ class ROBOT:
             self.sensors[linkName] = SENSOR(linkName)
 
     def Prepare_To_Act(self):
-        self.motors = {}
+        self.motors={}
         for jointName in pyrosim.jointNamesToIndices:
             self.motors[jointName] = MOTOR(jointName)
     
