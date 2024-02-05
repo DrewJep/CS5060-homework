@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 # plt.plot(FrontLegSensorValues,label="Front Leg")
 
 
-with open('targetAnglesF.txt', 'r') as file:
+with open('data/targetAnglesF.txt', 'r') as file:
     targetAnglesF = [float(line.strip()) for line in file]
-with open('targetAnglesB.txt', 'r') as file:
+with open('data/targetAnglesB.txt', 'r') as file:
     targetAnglesB = [float(line.strip()) for line in file]
 
 plt.plot(targetAnglesF,label="Front Leg")

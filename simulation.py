@@ -34,10 +34,10 @@ num_iterations = 1000
 timing = np.linspace(0, 2 * np.pi, num_iterations)
 targetAnglesF = amplitudeF * np.sin(frequencyF * timing + phaseOffsetF)
 targetAnglesF = np.interp(targetAnglesF, (targetAnglesF.min(), targetAnglesF.max()), (-np.pi/4, np.pi/4))
-np.savetxt('targetAnglesF.txt', targetAnglesF)
+np.savetxt('data/targetAnglesF.txt', targetAnglesF)
 targetAnglesB = amplitudeB * np.sin(frequencyB* timing + phaseOffsetB)
 targetAnglesB = np.interp(targetAnglesB, (targetAnglesB.min(), targetAnglesB.max()), (-np.pi/4, np.pi/4))
-np.savetxt('targetAnglesB.txt', targetAnglesB)
+np.savetxt('data/targetAnglesB.txt', targetAnglesB)
 ##############################
 
 for i in range(1000):
