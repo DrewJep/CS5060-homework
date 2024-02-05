@@ -21,13 +21,13 @@ frontLegSensorValues = np.zeros(1000)
 
 ##############################
 #making sine wave
-amplitudeF = np.pi*8
-frequencyF= 10
+amplitudeF = np.pi/8
+frequencyF = 10
 phaseOffsetF = 0
 
-amplitudeB=np.pi/8
-frequencyB=10
-phaseOffsetB=np.pi*4
+amplitudeB = np.pi/8
+frequencyB = 10
+phaseOffsetB = np.pi/2
 
 num_iterations = 1000
 
