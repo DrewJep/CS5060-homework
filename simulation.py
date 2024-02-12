@@ -6,6 +6,7 @@ import pybullet_data
 import pyrosim.pyrosim as pyrosim
 import time
 
+
 class SIMULATION:
     def __init__(self):
         self.physicsClient = p.connect(p.GUI)
@@ -19,6 +20,7 @@ class SIMULATION:
             time.sleep(c.sleep_time)
             p.stepSimulation()
             self.robot.Sense(i)
+            self.robot.Think()
             self.robot.Act(i)
     
     def __del__(self):
