@@ -22,6 +22,9 @@ class SOLUTION:
         f = open("data/fitness.txt", "r")
         self.fitness = float(f.read())
         f.close()
+
+    def Mutate(self):
+        self.weights[rand.randint(0, 2)][rand.randint(0, 1)] = rand.random()*2 - 1
     
     def Create_World(self):
         pyrosim.Start_SDF("world.sdf")
@@ -51,12 +54,8 @@ class SOLUTION:
         pyrosim.Send_Motor_Neuron(name = 4 , jointName = "Torso_FrontLeg")
 
         for currentRow in range(3):
-            for currentColumn in range(2):
-                pyrosim.Send_Synapse( sourceNeuronName = currentRow ,
-                                      targetNeuronName = currentColumn+3,
-                                      weight = self.weights[currentRow][currentColumn])
-                
-    def Mutate(self):
-        self.weights[rand.randint(0, 2)][rand.randint(0, 1)] = rand.random()*2 - 1
-
+            for currentCol in range(2):
+                pyrosim.Send_Synapse(sourceNeuronName = currentRow, 
+                                     targetNeuronName = currentCol + 3, 
+                                     weight = self.weights[currentRow][currentCol])
         pyrosim.End()

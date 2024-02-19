@@ -4,11 +4,11 @@ import copy
 
 class HILL_CLIMBER:
     def __init__(self):
-        self.parent=SOLUTION()
-    
+        self.parent = SOLUTION()
+
     def Evolve(self):
         self.parent.Evaluate("GUI")
-        for _ in range(c.numberOfGenerations):
+        for currentGeneration in range(c.numberOfGenerations):
             self.Evolve_For_One_Generation()
 
     def Evolve_For_One_Generation(self):
@@ -32,4 +32,4 @@ class HILL_CLIMBER:
         self.parent.Evaluate("GUI")
 
     def Print(self):
-        print(f'\nparent: {self.parent.fitness}, child: {self.child.fitness}\n')
+        print(f'\n\nparent: {self.parent.fitness}\nchild: {self.child.fitness}\n\n')
