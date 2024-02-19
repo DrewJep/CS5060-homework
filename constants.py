@@ -4,7 +4,7 @@ gravity = -9.8
 maxForce = 35
 
 
-sleep_time = 1/60
+sleep_time = 1/240
 num_iterations = 1000
 
 amplitudeF = np.pi/8

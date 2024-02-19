@@ -21,7 +21,7 @@ class SIMULATION:
 
     def Run(self):
         for i in range(c.num_iterations):
-            # time.sleep(c.sleep_time)
+            time.sleep(c.sleep_time)
             p.stepSimulation()
             self.robot.Sense(i)
             self.robot.Think()
