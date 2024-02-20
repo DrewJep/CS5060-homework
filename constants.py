@@ -15,5 +15,8 @@ amplitudeB = np.pi/8
 frequencyB = 10
 phaseOffsetB = np.pi/2
 
-numberOfGenerations =  10
-populationSize = 10
+numberOfGenerations =  1
+populationSize = 1
+
+numSensorNeurons = 3
+numMotorNeurons = 2
