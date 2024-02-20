@@ -57,4 +57,4 @@ class PARALLEL_HILL_CLIMBER:
 
     def Print(self):
         for key in self.parents.keys():
-            print(f'\n\nparent: {self.parents[key].fitness}\nchild: {self.children[key].fitness}\n\n')
+            print(f'\nparent: {self.parents[key].fitness}\nchild: {self.children[key].fitness}\n')
