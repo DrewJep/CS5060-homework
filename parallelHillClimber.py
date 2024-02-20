@@ -5,8 +5,8 @@ import os
 
 class PARALLEL_HILL_CLIMBER:
     def __init__(self):
-        os.system("rm brain*.nndf")
-        os.system("rm fitness*.txt")
+        os.system("rm data/brain*.nndf")
+        os.system("rm data/fitness*.txt")
         self.nextAvailableID = 0
         self.parents = {}
         for i in range(c.populationSize):
@@ -14,9 +14,9 @@ class PARALLEL_HILL_CLIMBER:
             self.nextAvailableID += 1 
 
     def Evolve(self):
-        self.parent.Evaluate("GUI")
-        for currentGeneration in range(c.numberOfGenerations):
-            self.Evolve_For_One_Generation()
+        self.Evaluate(self.parents)
+        for _ in range(c.numberOfGenerations):
+           self.Evolve_For_One_Generation()
 
     def Evolve_For_One_Generation(self):
         self.Spawn()

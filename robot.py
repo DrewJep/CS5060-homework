@@ -39,8 +39,8 @@ class ROBOT:
         self.nn.Update()
         # self.nn.Print()
     
-    def Get_Fitness(self):
-        f = open(f"tmp{id}.txt", "w")
+    def Get_Fitness(self,id):
+        f = open(f"data/tmp{id}.txt", "w")
         f.write(str(p.getLinkState(self.robotId, 0)[0][0]))
         f.close()
-        os.system(f"mv tmp{id}.txt fitness{id}.txt")
+        os.system(f"mv data/tmp{id}.txt data/fitness{id}.txt")

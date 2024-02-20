@@ -23,8 +23,8 @@ class SOLUTION:
         self.Create_World()
         self.Create_Body()
         self.Create_Brain()
-        os.system("python3 simulate.py " + directOrGUI +" "+ self.myID +" &")
-        while not os.path.exists(f"fitness{self.myID}.txt"):
+        os.system(f"python3 simulate.py {directOrGUI} {self.myID} &")
+        while not os.path.exists(f"data/fitness{self.myID}.txt"):
             time.sleep(0.01)
         f = open(f"data/fitness{self.myID}.txt", "r")
         self.fitness = float(f.read())
@@ -34,15 +34,15 @@ class SOLUTION:
         self.Create_World()
         self.Create_Body()
         self.Create_Brain()
-        os.system("python3 simulate.py " + directOrGUI +" "+ self.myID +" &")
+        os.system(f"python3 simulate.py {directOrGUI} {self.myID} &")
 
     def Wait_For_Simulation_To_End(self):
-        while not os.path.exists(f"fitness{self.myID}.txt"):
+        while not os.path.exists(f"data/fitness{self.myID}.txt"):
             time.sleep(0.01)
         f = open(f"data/fitness{self.myID}.txt", "r")
         self.fitness = float(f.read())
         f.close()
-        os.system(f"rm fitness{self.myID}.txt")
+        os.system(f"rm data/fitness{self.myID}.txt")
 
     def Mutate(self):
         self.weights[rand.randint(0, 2)][rand.randint(0, 1)] = rand.random()*2 - 1
